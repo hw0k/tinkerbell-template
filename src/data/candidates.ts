@@ -17,8 +17,8 @@ const commonFilter: Omit<FilterFragment, 'priceRange' | 'contractTypes'> = {
 const jeonseFilter: FilterFragment = {
     ...commonFilter,
     priceRange: {
-        deposit: { max: (14000 * TEN_THOUSANDS) + 1 },
-        rent: { max: (20 * TEN_THOUSANDS) + 1 },
+        deposit: { max: (16000 * TEN_THOUSANDS) + 1 },
+        rent: { max: (30 * TEN_THOUSANDS) + 1 },
         shouldIncludeMaintenance: false,
     },
     contractTypes: [ContractType.jeonse, ContractType.rent],

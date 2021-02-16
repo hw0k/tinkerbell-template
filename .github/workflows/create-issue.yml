@@ -4,8 +4,8 @@ on:
     branches:
       - public
   schedule:
-    # 월/수/금 오전 11시
-    - cron: "0 2 * * MON,WED,FRI"
+    # 월 오전 11시
+    - cron: "0 2 * * MON"
   workflow_dispatch:
 jobs:
   fetch:

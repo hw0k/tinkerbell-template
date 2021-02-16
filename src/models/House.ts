@@ -76,7 +76,7 @@ export class House {
     );
 
     const diff = differenceInCalendarDays(now, createdAt);
-    return diff < 2;
+    return diff < 8;
   }
 
   constructor(payload: HousePayload) {
