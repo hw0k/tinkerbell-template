@@ -31,7 +31,7 @@ const rentFilter: FilterFragment = {
         rent: { max: (60 * TEN_THOUSANDS) + 1 },
         shouldIncludeMaintenance: false,
     },
-    contractTypes: [ContractType.jeonse],
+    contractTypes: [ContractType.rent],
 };
 
 // zoomLevel 16
