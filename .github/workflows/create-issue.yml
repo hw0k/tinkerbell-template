@@ -2,10 +2,11 @@ name: 새로 올라온 직거래 방 정보 받아오기
 on:
   push:
     branches:
-      - master
+      - public
   schedule:
     # 월/수/금 오전 11시
     - cron: "0 2 * * MON,WED,FRI"
+  workflow_dispatch:
 jobs:
   fetch:
     name: Fetch
